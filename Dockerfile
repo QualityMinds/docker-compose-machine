@@ -5,7 +5,7 @@ RUN apk add --update nodejs nodejs-npm curl
 
 RUN npm install -g machine-share
 
-RUN curl -L https://github.com/docker/machine/releases/download/v0.13.0/docker-machine-`uname -s`-`uname -m` > /usr/local/bin/docker-machine && \
+RUN curl -L https://github.com/docker/machine/releases/download/v0.15.0/docker-machine-`uname -s`-`uname -m` > /usr/local/bin/docker-machine && \
     chmod +x /usr/local/bin/docker-machine
 
 RUN apk --update add 'py-pip' && \
